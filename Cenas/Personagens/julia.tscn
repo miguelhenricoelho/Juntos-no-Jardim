@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://Cenas/Personagens/personagem.tscn" id="1_base"]
+[ext_resource type="SpriteFrames" path="res://Assets/Personagens/julia/julia_animacoes.tres" id="2_quadros"]
+
+[node name="Julia" instance=ExtResource("1_base")]
+
+[node name="Animacao" parent="." index="0"]
+sprite_frames = ExtResource("2_quadros")

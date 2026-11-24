@@ -1,0 +1,41 @@
+[gd_resource type="Theme" format=3 uid="uid://dag45u2rl2yi1"]
+
+[ext_resource type="FontFile" uid="uid://dxwfslslh61vo" path="res://Assets/Fontes/DynaPuff.ttf" id="1"]
+
+[sub_resource type="StyleBoxEmpty" id="Vazio"]
+content_margin_left = 12.0
+content_margin_top = 8.0
+content_margin_right = 12.0
+content_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxFlat" id="Foco"]
+bg_color = Color(0, 0, 0, 0)
+border_width_bottom = 3
+border_color = Color(0.77, 0.53, 0.22, 1)
+
+[sub_resource type="StyleBoxFlat" id="Painel"]
+bg_color = Color(0.98, 0.96, 0.87, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.65, 0.71, 0.53, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[resource]
+default_font = ExtResource("1")
+default_font_size = 28
+Button/colors/font_color = Color(0.22, 0.38, 0.29, 1)
+Button/colors/font_focus_color = Color(0.65, 0.39, 0.14, 1)
+Button/colors/font_hover_color = Color(0.65, 0.39, 0.14, 1)
+Button/colors/font_pressed_color = Color(0.46, 0.29, 0.12, 1)
+Button/styles/disabled = SubResource("Vazio")
+Button/styles/focus = SubResource("Foco")
+Button/styles/hover = SubResource("Vazio")
+Button/styles/normal = SubResource("Vazio")
+Button/styles/pressed = SubResource("Vazio")
+Label/colors/font_color = Color(0.22, 0.38, 0.29, 1)
+Panel/styles/panel = SubResource("Painel")

@@ -1,0 +1,237 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://Scripts/game_over.gd" id="1"]
+[ext_resource type="Theme" path="res://Assets/Menu/interface.tres" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Interface/game_over_muda.svg" id="3"]
+[ext_resource type="FontVariation" path="res://Assets/Fontes/Nunito-Interface.tres" id="4"]
+
+[sub_resource type="StyleBoxFlat" id="Cartao"]
+bg_color = Color(0.98, 0.96, 0.886, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.65, 0.71, 0.53, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0.05, 0.11, 0.08, 0.32)
+shadow_size = 26
+shadow_offset = Vector2(0, 12)
+
+[sub_resource type="StyleBoxFlat" id="BotaoNormal"]
+content_margin_left = 24.0
+content_margin_top = 10.0
+content_margin_right = 24.0
+content_margin_bottom = 12.0
+bg_color = Color(0.29, 0.48, 0.36, 1)
+border_width_bottom = 4
+border_color = Color(0.2, 0.34, 0.26, 1)
+corner_radius_top_left = 29
+corner_radius_top_right = 29
+corner_radius_bottom_right = 29
+corner_radius_bottom_left = 29
+
+[sub_resource type="StyleBoxFlat" id="BotaoFoco"]
+content_margin_left = 24.0
+content_margin_top = 10.0
+content_margin_right = 24.0
+content_margin_bottom = 12.0
+bg_color = Color(0.76, 0.48, 0.22, 1)
+border_width_bottom = 4
+border_color = Color(0.55, 0.33, 0.14, 1)
+corner_radius_top_left = 29
+corner_radius_top_right = 29
+corner_radius_bottom_right = 29
+corner_radius_bottom_left = 29
+
+[sub_resource type="StyleBoxFlat" id="BotaoPressionado"]
+content_margin_left = 24.0
+content_margin_top = 12.0
+content_margin_right = 24.0
+content_margin_bottom = 10.0
+bg_color = Color(0.6, 0.36, 0.15, 1)
+border_width_top = 2
+border_color = Color(0.45, 0.27, 0.11, 1)
+corner_radius_top_left = 29
+corner_radius_top_right = 29
+corner_radius_bottom_right = 29
+corner_radius_bottom_left = 29
+
+[sub_resource type="StyleBoxFlat" id="BotaoAnel"]
+draw_center = false
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.76, 0.48, 0.22, 1)
+corner_radius_top_left = 33
+corner_radius_top_right = 33
+corner_radius_bottom_right = 33
+corner_radius_bottom_left = 33
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2")
+script = ExtResource("1")
+
+[node name="Sombra" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1, 0.19, 0.15, 0.6)
+
+[node name="Cartao" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 176.0
+offset_right = 940.0
+offset_bottom = 596.0
+theme_override_styles/panel = SubResource("Cartao")
+
+[node name="Selo" type="TextureRect" parent="Cartao"]
+layout_mode = 0
+offset_left = 234.0
+offset_top = -70.0
+offset_right = 366.0
+offset_bottom = 62.0
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="Chamada" type="Label" parent="Cartao"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 76.0
+offset_right = 560.0
+offset_bottom = 100.0
+text = "FIM DA TENTATIVA"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.66, 0.4, 0.17, 1)
+theme_override_font_sizes/font_size = 15
+mouse_filter = 2
+
+[node name="Titulo" type="Label" parent="Cartao"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 98.0
+offset_right = 570.0
+offset_bottom = 152.0
+text = "Ops! Não foi dessa vez"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.22, 0.38, 0.29, 1)
+theme_override_font_sizes/font_size = 38
+mouse_filter = 2
+
+[node name="LinhaEsquerda" type="ColorRect" parent="Cartao"]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 167.0
+offset_right = 286.0
+offset_bottom = 169.0
+color = Color(0.65, 0.71, 0.53, 1)
+mouse_filter = 2
+
+[node name="Ponto" type="ColorRect" parent="Cartao"]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 162.0
+offset_right = 304.0
+offset_bottom = 170.0
+rotation = 0.785398
+pivot_offset = Vector2(4, 4)
+color = Color(0.76, 0.48, 0.22, 1)
+mouse_filter = 2
+
+[node name="LinhaDireita" type="ColorRect" parent="Cartao"]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 167.0
+offset_right = 410.0
+offset_bottom = 169.0
+color = Color(0.65, 0.71, 0.53, 1)
+mouse_filter = 2
+
+[node name="Mensagem" type="Label" parent="Cartao"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 184.0
+offset_right = 550.0
+offset_bottom = 248.0
+text = "Ana ficou sem vidas.
+A dupla perdeu esta tentativa."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+theme_override_colors/font_color = Color(0.3, 0.42, 0.35, 1)
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 21
+mouse_filter = 2
+
+[node name="Incentivo" type="Label" parent="Cartao"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 250.0
+offset_right = 550.0
+offset_bottom = 276.0
+text = "Respirem fundo e tentem de novo, juntos!"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.48, 0.55, 0.43, 1)
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 17
+mouse_filter = 2
+
+[node name="Recomecar" type="Button" parent="Cartao"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 292.0
+offset_right = 450.0
+offset_bottom = 350.0
+text = "Recomeçar fase"
+theme_override_colors/font_color = Color(0.98, 0.96, 0.886, 1)
+theme_override_colors/font_hover_color = Color(1, 0.98, 0.92, 1)
+theme_override_colors/font_focus_color = Color(1, 0.98, 0.92, 1)
+theme_override_colors/font_pressed_color = Color(0.98, 0.93, 0.84, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.98, 0.93, 0.84, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("BotaoNormal")
+theme_override_styles/hover = SubResource("BotaoFoco")
+theme_override_styles/focus = SubResource("BotaoAnel")
+theme_override_styles/pressed = SubResource("BotaoPressionado")
+theme_override_styles/hover_pressed = SubResource("BotaoPressionado")
+
+[node name="Menu" type="Button" parent="Cartao"]
+visible = false
+layout_mode = 0
+offset_left = 175.0
+offset_top = 356.0
+offset_right = 425.0
+offset_bottom = 396.0
+text = "Menu principal"
+theme_override_font_sizes/font_size = 20
+
+[node name="Dica" type="Label" parent="Cartao"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 370.0
+offset_right = 560.0
+offset_bottom = 394.0
+text = "Enter para recomeçar"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.58, 0.63, 0.52, 1)
+theme_override_font_sizes/font_size = 15
+mouse_filter = 2

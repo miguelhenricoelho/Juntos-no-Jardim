@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="72" viewBox="0 0 128 72">
+  <!-- Cauda, corpo e cabeça formam uma silhueta simples. -->
+  <path d="M39 43L14 31L22 47L10 55L42 55Z" fill="#638d70" stroke="#31544d" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="62" cy="47" rx="29" ry="15" fill="#47786d" stroke="#294e48" stroke-width="4"/>
+  <circle cx="91" cy="39" r="14" fill="#6b9d7a" stroke="#294e48" stroke-width="4"/>
+  <path d="M104 39L122 46L104 52Z" fill="#e0a047" stroke="#97662c" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Asa levantada: primeiro quadro da animação. -->
+  <path d="M54 42C43 29 43 16 51 6C62 15 68 27 68 42Z" fill="#8db778" stroke="#31544d" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M56 35C54 26 55 19 57 14" fill="none" stroke="#b9d28e" stroke-width="3" stroke-linecap="round"/>
+
+  <circle cx="95" cy="35" r="4" fill="#fff5d6"/>
+  <circle cx="96" cy="35" r="2" fill="#233b36"/>
+  <path d="M75 51C68 55 58 56 50 53" fill="none" stroke="#72a28a" stroke-width="3" stroke-linecap="round"/>
+</svg>

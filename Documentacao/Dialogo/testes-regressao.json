@@ -1,0 +1,169 @@
+{
+	"falhas": 0,
+	"testes": [
+		{
+			"ok": true,
+			"teste": "Menu abre com foco em Jogar"
+		},
+		{
+			"ok": true,
+			"teste": "DynaPuff possui os acentos portugueses"
+		},
+		{
+			"ok": true,
+			"teste": "Menu permanece visualmente estático"
+		},
+		{
+			"ok": true,
+			"teste": "Seta navega pelas opções"
+		},
+		{
+			"ok": true,
+			"teste": "Como jogar abre ajuda e bloqueia opções atrás"
+		},
+		{
+			"ok": true,
+			"teste": "Voltar fecha ajuda"
+		},
+		{
+			"ok": true,
+			"teste": "Esc fecha ajuda"
+		},
+		{
+			"ok": true,
+			"teste": "Jogar abre a primeira fase"
+		},
+		{
+			"ok": true,
+			"teste": "01_galeria: Esc abre pause"
+		},
+		{
+			"ok": true,
+			"teste": "01_galeria: jogadores e câmera congelam"
+		},
+		{
+			"ok": true,
+			"teste": "01_galeria: tarefas não avançam pausadas"
+		},
+		{
+			"ok": true,
+			"teste": "01_galeria: R não reinicia por trás do pause"
+		},
+		{
+			"ok": true,
+			"teste": "01_galeria: repetição de tecla não alterna pause"
+		},
+		{
+			"ok": true,
+			"teste": "01_galeria: Continuar retoma movimento"
+		},
+		{
+			"ok": true,
+			"teste": "01_galeria: Esc também retoma"
+		},
+		{
+			"ok": true,
+			"teste": "Coleta original de flores e regador funciona"
+		},
+		{
+			"ok": true,
+			"teste": "01_galeria: Reiniciar recarrega sem travar"
+		},
+		{
+			"ok": true,
+			"teste": "01_galeria: reinício limpa progresso da fase"
+		},
+		{
+			"ok": true,
+			"teste": "01_galeria: Menu principal sai do pause"
+		},
+		{
+			"ok": true,
+			"teste": "02_estufa: Esc abre pause"
+		},
+		{
+			"ok": true,
+			"teste": "02_estufa: jogadores e câmera congelam"
+		},
+		{
+			"ok": true,
+			"teste": "02_estufa: tarefas não avançam pausadas"
+		},
+		{
+			"ok": true,
+			"teste": "02_estufa: R não reinicia por trás do pause"
+		},
+		{
+			"ok": true,
+			"teste": "02_estufa: repetição de tecla não alterna pause"
+		},
+		{
+			"ok": true,
+			"teste": "02_estufa: Continuar retoma movimento"
+		},
+		{
+			"ok": true,
+			"teste": "02_estufa: Esc também retoma"
+		},
+		{
+			"ok": true,
+			"teste": "Plantio e rega originais funcionam"
+		},
+		{
+			"ok": true,
+			"teste": "02_estufa: Reiniciar recarrega sem travar"
+		},
+		{
+			"ok": true,
+			"teste": "02_estufa: reinício limpa progresso da fase"
+		},
+		{
+			"ok": true,
+			"teste": "02_estufa: Menu principal sai do pause"
+		},
+		{
+			"ok": true,
+			"teste": "03_bosque: Esc abre pause"
+		},
+		{
+			"ok": true,
+			"teste": "03_bosque: jogadores e câmera congelam"
+		},
+		{
+			"ok": true,
+			"teste": "03_bosque: tarefas não avançam pausadas"
+		},
+		{
+			"ok": true,
+			"teste": "Temporizador da professora também pausa"
+		},
+		{
+			"ok": true,
+			"teste": "03_bosque: R não reinicia por trás do pause"
+		},
+		{
+			"ok": true,
+			"teste": "03_bosque: repetição de tecla não alterna pause"
+		},
+		{
+			"ok": true,
+			"teste": "03_bosque: Continuar retoma movimento"
+		},
+		{
+			"ok": true,
+			"teste": "03_bosque: Esc também retoma"
+		},
+		{
+			"ok": true,
+			"teste": "03_bosque: Reiniciar recarrega sem travar"
+		},
+		{
+			"ok": true,
+			"teste": "03_bosque: reinício limpa progresso da fase"
+		},
+		{
+			"ok": true,
+			"teste": "03_bosque: Menu principal sai do pause"
+		}
+	]
+}

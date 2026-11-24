@@ -1,0 +1,130 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://pwpdhtjojujn"]
+
+[ext_resource type="Texture2D" uid="uid://bhrgrt1i3ox4x" path="res://Assets/Personagens/sofia/sofia_spritesheet.png" id="1"]
+[ext_resource type="Texture2D" path="res://Assets/Personagens/sofia/sofia_acoes.png" id="2"]
+
+[sub_resource type="AtlasTexture" id="Atlas_2"]
+atlas = ExtResource("1")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Atlas_3"]
+atlas = ExtResource("1")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Atlas_4"]
+atlas = ExtResource("1")
+region = Rect2(0, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Atlas_5"]
+atlas = ExtResource("1")
+region = Rect2(256, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Atlas_7"]
+atlas = ExtResource("1")
+region = Rect2(768, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Atlas_0"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Atlas_1"]
+atlas = ExtResource("1")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Atlas_6"]
+atlas = ExtResource("1")
+region = Rect2(512, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Acao_0"]
+atlas = ExtResource("2")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Acao_1"]
+atlas = ExtResource("2")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Acao_2"]
+atlas = ExtResource("2")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Acao_3"]
+atlas = ExtResource("2")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Acao_4"]
+atlas = ExtResource("2")
+region = Rect2(0, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Acao_5"]
+atlas = ExtResource("2")
+region = Rect2(256, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Acao_6"]
+atlas = ExtResource("2")
+region = Rect2(512, 256, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Acao_7"]
+atlas = ExtResource("2")
+region = Rect2(768, 256, 256, 256)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Atlas_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("Atlas_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("Atlas_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("Atlas_5")
+}],
+"loop": 1,
+"name": &"andar",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Acao_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("Acao_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("Acao_6")
+}, {
+"duration": 1.0,
+"texture": SubResource("Acao_7")
+}],
+"loop": 1,
+"name": &"empurrar",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Atlas_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("Atlas_1")
+}],
+"loop": 1,
+"name": &"parado",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Acao_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("Acao_2")
+}, {
+"duration": 2.0,
+"texture": SubResource("Acao_3")
+}],
+"loop": 0,
+"name": &"pular",
+"speed": 5.0
+}]

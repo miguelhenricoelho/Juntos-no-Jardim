@@ -1,0 +1,17 @@
+RETOMADA — PROFESSORA, DIÁLOGOS E ENCERRAMENTO
+
+Já estava pronto: conversa inicial, Como Jogar, menu, pausa e tarefas das três fases. A cópia foi comparada com o ZIP recebido antes da edição: nenhum arquivo divergente ou ausente. Não havia implementação parcial dos novos ajustes a preservar.
+
+Concluído agora:
+- A cena compartilhada usa Assets/Personagens/professora/professora_spritesheet.png, imagem original preservada byte a byte. AtlasTexture seleciona o primeiro quadro, sem redesenhar a professora; Sprite2D e retrato usam o mesmo recurso. Escala proporcional aos alunos, conferida em captura real.
+- Scripts/dialogo_professora.gd: reaproveitado para início e final. Area2D exige ambos próximos; no final exige também ambos dentro de AreaDeSaida. Congela a física dos alunos durante a conversa. Ações dialogo_avancar, j1_pular, j2_pular e ui_accept passam por um bloqueio que só libera após soltar os botões. Eventos são consumidos antes do Button para evitar avanço duplo. Não há temporizador, avanço automático ou escrita animada.
+- Cenas/dialogo_professora.tscn: modelo original com AtlasTexture, mesma interface e região de proximidade.
+- Cenas/Cenarios/03_bosque.tscn: professora substituída pela instância da conversa compartilhada, no mesmo local. Layout, plataformas e câmera preservados.
+- Scripts/fase_cenario.gd: pequeno ajuste em _terminar para deixar a conversa conduzir o encerramento do bosque. Tarefas e movimentação preservadas.
+- Novos Cenas/fim.tscn e Scripts/fim.gd: Control estático, Panel, Labels e Button usando o tema DynaPuff existente. Mensagem final e retorno ao menu. Aguarda soltar a última confirmação antes de habilitar o botão, evitando retorno acidental.
+
+Validação executada no Godot 4.7.2: 38 verificações de diálogo/encerramento e 40 de regressão, todas aprovadas. Incluem botão segurado, repetição de teclado, pressão duplicada, ações dos dois jogadores, Enter/Espaço sem duplicação, ausência de confirmação por movimento, proximidade individual/conjunta, bloqueio e liberação de movimento, pausa, reinício, menu, coleta, plantio e rega. Capturas reais da professora, diálogos e tela final inspecionadas. Referências res:// verificadas e todos os recursos da base presentes; assets originais idênticos.
+
+Limitações: ambiente registrou aviso de cache user:// indisponível e recursos referenciados ao encerrar os testes automatizados. Não houve falha nas verificações funcionais. Controle físico futuro e teste com crianças não foram realizados.
+
+O ZIP inclui diretórios explícitos para extração no Godot e exclui somente .godot/. Abra project.godot na pasta Juntos-no-Jardim-Cenarios extraída. Documentos antigos no projeto são históricos; este relatório descreve a versão atual. O projeto original do grupo e o ZIP de entrada não foram modificados.

@@ -1,0 +1,12 @@
+{
+  "base": "Versão de menu e pause aprovada",
+  "arquivos_modificados": [
+    "project.godot",
+    "Cenas/menu.tscn",
+    "Cenas/Cenarios/01_galeria.tscn"
+  ],
+  "menu_principal_imagem_identica": true,
+  "pause_e_scripts_anteriores_identicos": true,
+  "fase_1_apenas_adicao_do_npc": true,
+  "referencias_ausentes": []
+}

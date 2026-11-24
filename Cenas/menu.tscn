@@ -1,0 +1,309 @@
+[gd_scene load_steps=8 format=3]
+[ext_resource type="Texture2D" path="res://Assets/Cenarios/decoracao/flor_lilas.png" id="flor_ajuda2"]
+
+[ext_resource type="Texture2D" path="res://Assets/Cenarios/decoracao/flor_rosa.png" id="flor_ajuda1"]
+
+[ext_resource type="Texture2D" path="res://Assets/Cenarios/decoracao/flor_amarela.png" id="flor_ajuda0"]
+
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="1"]
+[ext_resource type="Theme" path="res://Assets/Menu/interface.tres" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Menu/fundo-menu.svg" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Menu/ana-joao-jardim.png" id="4"]
+[ext_resource type="FontVariation" path="res://Assets/Fontes/DynaPuff-Titulo.tres" id="5"]
+[ext_resource type="FontVariation" path="res://Assets/Fontes/Nunito-Interface.tres" id="6"]
+[ext_resource type="AudioStream" path="res://Assets/Sons/musica/jardim_loop_20s.wav" id="7"]
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource("2")
+script = ExtResource("1")
+
+[node name="Fundo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3")
+expand_mode = 1
+mouse_filter = 2
+
+[node name="Dupla" type="TextureRect" parent="."]
+offset_left = 710.0
+offset_top = 333.0
+offset_right = 1220.0
+offset_bottom = 673.0
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="Titulo" type="Label" parent="."]
+offset_left = 78.0
+offset_top = 100.0
+offset_right = 503.0
+offset_bottom = 191.0
+text = "Juntos"
+theme_override_font_sizes/font_size = 76
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("5")
+
+[node name="Complemento" type="Label" parent="."]
+offset_left = 82.0
+offset_top = 197.0
+offset_right = 502.0
+offset_bottom = 269.0
+text = "no Jardim"
+theme_override_font_sizes/font_size = 52
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("5")
+
+[node name="Jogar" type="Button" parent="."]
+offset_left = 82.0
+offset_top = 346.0
+offset_right = 372.0
+offset_bottom = 408.0
+text = "Jogar"
+alignment = 0
+theme_override_font_sizes/font_size = 36
+
+[node name="ComoJogar" type="Button" parent="."]
+offset_left = 82.0
+offset_top = 424.0
+offset_right = 372.0
+offset_bottom = 486.0
+text = "Como jogar"
+alignment = 0
+theme_override_font_sizes/font_size = 29
+
+[node name="Sair" type="Button" parent="."]
+offset_left = 82.0
+offset_top = 502.0
+offset_right = 372.0
+offset_bottom = 564.0
+text = "Sair"
+alignment = 0
+theme_override_font_sizes/font_size = 29
+
+[node name="Ajuda" type="Control" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+visible = false
+
+[node name="Sombra" type="ColorRect" parent="Ajuda"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.96, 0.95, 0.86, 1)
+
+[node name="Painel" type="Control" parent="Ajuda"]
+offset_left = 100.0
+offset_top = 36.0
+offset_right = 1180.0
+offset_bottom = 686.0
+
+
+[node name="Titulo" type="Label" parent="Ajuda/Painel"]
+offset_left = 40.0
+offset_top = 20.0
+offset_right = 1040.0
+offset_bottom = 84.0
+text = "Como jogar"
+theme_override_font_sizes/font_size = 40
+mouse_filter = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="Missao" type="Label" parent="Ajuda/Painel"]
+offset_left = 70.0
+offset_top = 100.0
+offset_right = 1010.0
+offset_bottom = 192.0
+text = "Preparem o jardim antes da chegada da turma.\nOs dois precisam chegar juntos ao fim de cada fase."
+theme_override_font_sizes/font_size = 24
+mouse_filter = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="Cartao0" type="Panel" parent="Ajuda"]
+offset_left = 124.0
+offset_top = 260.0
+offset_right = 452.0
+offset_bottom = 502.0
+
+
+[node name="Flor" type="TextureRect" parent="Ajuda/Cartao0"]
+offset_left = 258.0
+offset_top = 16.0
+offset_right = 300.0
+offset_bottom = 58.0
+texture = ExtResource("flor_ajuda0")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="Numero" type="Label" parent="Ajuda/Cartao0"]
+offset_left = 24.0
+offset_top = 18.0
+offset_right = 84.0
+offset_bottom = 63.0
+text = "01"
+theme_override_font_sizes/font_size = 27
+mouse_filter = 2
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.39, 0.14, 1)
+
+[node name="Titulo" type="Label" parent="Ajuda/Cartao0"]
+offset_left = 24.0
+offset_top = 70.0
+offset_right = 304.0
+offset_bottom = 110.0
+text = "Movimentem-se"
+theme_override_font_sizes/font_size = 23
+mouse_filter = 2
+autowrap_mode = 2
+
+
+[node name="Texto" type="Label" parent="Ajuda/Cartao0"]
+offset_left = 24.0
+offset_top = 122.0
+offset_right = 304.0
+offset_bottom = 232.0
+text = "Ana usa A, D e W. João usa as setas. Os dois podem pular para alcançar os lugares altos."
+theme_override_font_sizes/font_size = 20
+mouse_filter = 2
+autowrap_mode = 2
+
+
+[node name="Cartao1" type="Panel" parent="Ajuda"]
+offset_left = 476.0
+offset_top = 260.0
+offset_right = 804.0
+offset_bottom = 502.0
+
+
+[node name="Flor" type="TextureRect" parent="Ajuda/Cartao1"]
+offset_left = 258.0
+offset_top = 16.0
+offset_right = 300.0
+offset_bottom = 58.0
+texture = ExtResource("flor_ajuda1")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="Numero" type="Label" parent="Ajuda/Cartao1"]
+offset_left = 24.0
+offset_top = 18.0
+offset_right = 84.0
+offset_bottom = 63.0
+text = "02"
+theme_override_font_sizes/font_size = 27
+mouse_filter = 2
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.39, 0.14, 1)
+
+[node name="Titulo" type="Label" parent="Ajuda/Cartao1"]
+offset_left = 24.0
+offset_top = 70.0
+offset_right = 304.0
+offset_bottom = 110.0
+text = "Desviem dos obstáculos"
+theme_override_font_sizes/font_size = 23
+mouse_filter = 2
+autowrap_mode = 2
+
+
+[node name="Texto" type="Label" parent="Ajuda/Cartao1"]
+offset_left = 24.0
+offset_top = 122.0
+offset_right = 304.0
+offset_bottom = 232.0
+text = "Pulem os galhos, esperem o pássaro passar e não pisem nas poças. Cada toque tira uma vida."
+theme_override_font_sizes/font_size = 20
+mouse_filter = 2
+autowrap_mode = 2
+
+
+[node name="Cartao2" type="Panel" parent="Ajuda"]
+offset_left = 828.0
+offset_top = 260.0
+offset_right = 1156.0
+offset_bottom = 502.0
+
+
+[node name="Flor" type="TextureRect" parent="Ajuda/Cartao2"]
+offset_left = 258.0
+offset_top = 16.0
+offset_right = 300.0
+offset_bottom = 58.0
+texture = ExtResource("flor_ajuda2")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+[node name="Numero" type="Label" parent="Ajuda/Cartao2"]
+offset_left = 24.0
+offset_top = 18.0
+offset_right = 84.0
+offset_bottom = 63.0
+text = "03"
+theme_override_font_sizes/font_size = 27
+mouse_filter = 2
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.39, 0.14, 1)
+
+[node name="Titulo" type="Label" parent="Ajuda/Cartao2"]
+offset_left = 24.0
+offset_top = 70.0
+offset_right = 304.0
+offset_bottom = 110.0
+text = "Cuidem das vidas"
+theme_override_font_sizes/font_size = 23
+mouse_filter = 2
+autowrap_mode = 2
+
+
+[node name="Texto" type="Label" parent="Ajuda/Cartao2"]
+offset_left = 24.0
+offset_top = 122.0
+offset_right = 304.0
+offset_bottom = 232.0
+text = "Perto do colega, Ana aperta E e João Shift para dar uma vida quando o outro precisar."
+theme_override_font_sizes/font_size = 20
+mouse_filter = 2
+autowrap_mode = 2
+
+
+[node name="Lembrete" type="Label" parent="Ajuda/Painel"]
+offset_left = 70.0
+offset_top = 497.0
+offset_right = 1010.0
+offset_bottom = 565.0
+text = "Limites: fase 1 — 40s, fase 2 — 45s e fase 3 — 50s.\nAo perder, a fase recomeça e o cronômetro total continua."
+theme_override_font_sizes/font_size = 23
+mouse_filter = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="Voltar" type="Button" parent="Ajuda/Painel"]
+offset_left = 410.0
+offset_top = 579.0
+offset_right = 670.0
+offset_bottom = 637.0
+text = "Voltar"
+
+[node name="Musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7")
+volume_db = -5.0
+autoplay = true
+
+[connection signal="finished" from="Musica" to="Musica" method="play"]

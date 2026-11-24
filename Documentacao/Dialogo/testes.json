@@ -1,0 +1,93 @@
+{
+	"falhas": 0,
+	"testes": [
+		{
+			"ok": true,
+			"teste": "Toda a ajuda usa DynaPuff"
+		},
+		{
+			"ok": true,
+			"teste": "Ajuda sem instruções de teclado"
+		},
+		{
+			"ok": true,
+			"teste": "Voltar funciona"
+		},
+		{
+			"ok": true,
+			"teste": "Diálogo não começa no spawn"
+		},
+		{
+			"ok": true,
+			"teste": "Só Ana próxima não inicia conversa"
+		},
+		{
+			"ok": true,
+			"teste": "Só João próximo não inicia conversa"
+		},
+		{
+			"ok": true,
+			"teste": "Dois alunos próximos iniciam na primeira fala"
+		},
+		{
+			"ok": true,
+			"teste": "Andar e pular bloqueados durante diálogo"
+		},
+		{
+			"ok": true,
+			"teste": "Ação abstrata avança exatamente uma fala"
+		},
+		{
+			"ok": true,
+			"teste": "Pause abre durante a conversa"
+		},
+		{
+			"ok": true,
+			"teste": "Confirmação não avança por trás do pause"
+		},
+		{
+			"ok": true,
+			"teste": "Continuar mantém bloqueio da conversa"
+		},
+		{
+			"ok": true,
+			"teste": "Todas as falas cabem no espaço de leitura"
+		},
+		{
+			"ok": true,
+			"teste": "Última confirmação encerra diálogo"
+		},
+		{
+			"ok": true,
+			"teste": "Fase e jogadores liberados"
+		},
+		{
+			"ok": true,
+			"teste": "Movimentação realmente retomada"
+		},
+		{
+			"ok": true,
+			"teste": "Diálogo não repete na mesma tentativa"
+		},
+		{
+			"ok": true,
+			"teste": "Câmera continua respeitando limite"
+		},
+		{
+			"ok": true,
+			"teste": "Reinício limpa conclusão do diálogo e pause"
+		},
+		{
+			"ok": true,
+			"teste": "Diálogo reaparece após reinício"
+		},
+		{
+			"ok": true,
+			"teste": "Botão visual também avança"
+		},
+		{
+			"ok": true,
+			"teste": "Menu funciona durante conversa pausada"
+		}
+	]
+}

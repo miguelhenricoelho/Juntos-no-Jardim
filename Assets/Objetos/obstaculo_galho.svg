@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="86" viewBox="0 0 170 86">
+  <!-- Galho principal: fino, irregular e com as pontas quebradas. -->
+  <path d="M12 61L31 55L55 56L81 49L108 51L137 43L158 47L151 58L126 60L102 66L74 63L49 69L24 67Z" fill="#9b6039" stroke="#4b3529" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M21 58L34 58M62 57L79 53M110 57L128 51" fill="none" stroke="#d09258" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Dois ramos secos deixam claro que é um galho caído. -->
+  <path d="M53 57L43 35L47 17" fill="none" stroke="#4b3529" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M53 56L45 35L49 18" fill="none" stroke="#a96b3f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45 35L30 27" fill="none" stroke="#4b3529" stroke-width="8" stroke-linecap="round"/>
+  <path d="M45 34L31 27" fill="none" stroke="#a96b3f" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M116 52L127 31L124 14" fill="none" stroke="#4b3529" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M116 51L125 31L122 15" fill="none" stroke="#a96b3f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M126 31L142 23" fill="none" stroke="#4b3529" stroke-width="8" stroke-linecap="round"/>
+  <path d="M126 30L141 23" fill="none" stroke="#a96b3f" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Madeira clara nas pontas quebradas. -->
+  <path d="M44 16L53 17L49 23Z" fill="#e0ad72" stroke="#4b3529" stroke-width="2"/>
+  <path d="M117 13L127 12L125 20Z" fill="#e0ad72" stroke="#4b3529" stroke-width="2"/>
+</svg>

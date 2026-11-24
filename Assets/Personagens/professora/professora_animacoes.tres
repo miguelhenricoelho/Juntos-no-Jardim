@@ -1,0 +1,33 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://c4l86uhlt7xi"]
+
+[ext_resource type="Texture2D" uid="uid://dkc1ahr6onti6" path="res://Assets/Personagens/professora/professora_spritesheet.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="Parada"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="Acenando"]
+atlas = ExtResource("1")
+region = Rect2(256, 0, 256, 256)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Parada")
+}, {
+"duration": 1.0,
+"texture": SubResource("Acenando")
+}],
+"loop": 1,
+"name": &"acenando",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Parada")
+}],
+"loop": 1,
+"name": &"parada",
+"speed": 1.0
+}]

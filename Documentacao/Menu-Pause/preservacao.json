@@ -1,0 +1,18 @@
+{
+  "base": "Juntos-no-Jardim-Cenarios-2 - atualizado.zip",
+  "sha256_original": "475141ecd0b123353a049fbae3f79072b1222ae2acc36cb976eee4cb3a78943a",
+  "arquivos_originais_ausentes": [],
+  "arquivos_alterados": [
+    "Scripts/professora.gd",
+    "project.godot",
+    "Cenas/menu.tscn",
+    "Cenas/Cenarios/01_galeria.tscn",
+    "Cenas/Cenarios/02_estufa.tscn",
+    "Cenas/Cenarios/03_bosque.tscn",
+    "Scripts/menu.gd"
+  ],
+  "assets_originais_identicos": 192,
+  "referencias_ausentes": [],
+  "fases_apenas_instancia_pause": true,
+  "movimentacao_e_controlador_fases_identicos": true
+}

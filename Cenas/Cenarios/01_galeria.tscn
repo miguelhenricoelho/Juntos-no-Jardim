@@ -1,0 +1,1574 @@
+[gd_scene format=3 uid="uid://desepr1y53ldh"]
+
+[ext_resource type="PackedScene" path="res://Cenas/dialogo_professora.tscn" id="conversa"]
+
+[ext_resource type="PackedScene" path="res://Cenas/pausa.tscn" id="pause_ui"]
+
+[ext_resource type="Script" uid="uid://dte2uy087upqq" path="res://Scripts/fase_cenario.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://6dya4x4r2myq" path="res://Assets/Cenarios/Expansao/ceu.svg" id="2"]
+[ext_resource type="Texture2D" uid="uid://dw40bnvc7ah6i" path="res://Assets/Cenarios/Expansao/colina.svg" id="3"]
+[ext_resource type="Texture2D" uid="uid://cjmkd50vn2dx5" path="res://Assets/Cenarios/Expansao/nuvem.svg" id="4"]
+[ext_resource type="Texture2D" uid="uid://bqaa02exqd8nk" path="res://Assets/Cenarios/Expansao/arvore_distante.svg" id="5"]
+[ext_resource type="Texture2D" uid="uid://dft70ivaj6rfq" path="res://Assets/Cenarios/tiles/terra.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://0nf2tqv1p8ga" path="res://Assets/Cenarios/tiles/grama_topo.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cufsnhayde00s" path="res://Assets/Cenarios/Expansao/acabamento_degrau.svg" id="8"]
+[ext_resource type="Texture2D" uid="uid://cqaqmbh3nhdx3" path="res://Assets/Cenarios/tiles/plataforma_madeira.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://5kje7tprtvuk" path="res://Assets/Cenarios/decoracao/escola.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://choxagxdo11sn" path="res://Assets/Cenarios/Expansao/galeria_arco.svg" id="11"]
+[ext_resource type="Texture2D" uid="uid://bftp35vpq8b88" path="res://Assets/Cenarios/Expansao/jabuticabeira.svg" id="12"]
+[ext_resource type="Texture2D" uid="uid://bx5wi6ockkdu0" path="res://Assets/Cenarios/decoracao/canteiro.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bptuf7tuha6w0" path="res://Assets/Objetos/banco.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://bgy4wx706bdy5" path="res://Assets/Cenarios/decoracao/cerca.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://byg8gvnjbnfr7" path="res://Assets/Cenarios/Expansao/estufa_modulo.svg" id="16"]
+[ext_resource type="Texture2D" uid="uid://i5p700ieax0o" path="res://Assets/Cenarios/Expansao/estufa_entrada.svg" id="17"]
+[ext_resource type="FontVariation" path="res://Assets/Fontes/Nunito-Titulos.tres" id="19"]
+[ext_resource type="Texture2D" uid="uid://upkod7d2bwv8" path="res://Assets/Cenarios/Expansao/folhagem_vaso.svg" id="20"]
+[ext_resource type="Texture2D" uid="uid://dlfpuu18h1ayf" path="res://Assets/Cenarios/decoracao/flor_amarela.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://bspqdw72fawfb" path="res://Assets/Cenarios/decoracao/flor_lilas.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://dw22muhff741p" path="res://Assets/Cenarios/decoracao/arbusto.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://cryeditjmrw0n" path="res://Assets/Cenarios/decoracao/flor_rosa.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://gkt6mnyfq474" path="res://Assets/Cenarios/decoracao/grama_tufo.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://xdmhj4kvsk4d" path="res://Assets/Cenarios/Expansao/samambaia.svg" id="27"]
+[ext_resource type="Texture2D" uid="uid://7na4fo4x48kn" path="res://Assets/Cenarios/Expansao/placa_direcao.svg" id="30"]
+[ext_resource type="PackedScene" path="res://Cenas/Personagens/ana.tscn" id="31"]
+[ext_resource type="PackedScene" path="res://Cenas/Personagens/joao.tscn" id="32"]
+[ext_resource type="Texture2D" uid="uid://ciiafa0ugkgpa" path="res://Assets/Objetos/regador.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://d1aou1jkmh67l" path="res://Assets/Objetos/buque_coletavel.svg" id="35"]
+[ext_resource type="AudioStream" uid="uid://bsj4mxx5lyln4" path="res://Assets/Sons/efeitos/coletar.wav" id="36"]
+[ext_resource type="AudioStream" path="res://Assets/Sons/musica/jardim_loop_20s.wav" id="37"]
+
+[sub_resource type="RectangleShape2D" id="Shape0"]
+size = Vector2(640, 152)
+
+[sub_resource type="RectangleShape2D" id="Shape1"]
+size = Vector2(256, 184)
+
+[sub_resource type="RectangleShape2D" id="Shape2"]
+size = Vector2(256, 216)
+
+[sub_resource type="RectangleShape2D" id="Shape3"]
+size = Vector2(320, 184)
+
+[sub_resource type="RectangleShape2D" id="Shape4"]
+size = Vector2(576, 152)
+
+[sub_resource type="RectangleShape2D" id="Shape5"]
+size = Vector2(256, 184)
+
+[sub_resource type="RectangleShape2D" id="Shape6"]
+size = Vector2(256, 216)
+
+[sub_resource type="RectangleShape2D" id="Shape7"]
+size = Vector2(256, 184)
+
+[sub_resource type="RectangleShape2D" id="Shape8"]
+size = Vector2(1024, 152)
+
+[sub_resource type="RectangleShape2D" id="Shape9"]
+size = Vector2(32, 760)
+
+[sub_resource type="RectangleShape2D" id="Shape10"]
+size = Vector2(32, 760)
+
+[sub_resource type="RectangleShape2D" id="Shape11"]
+size = Vector2(192, 24)
+
+[sub_resource type="RectangleShape2D" id="Shape12"]
+size = Vector2(192, 24)
+
+[sub_resource type="RectangleShape2D" id="PassarelaShape"]
+size = Vector2(144, 20)
+
+[sub_resource type="RectangleShape2D" id="SaidaShape"]
+size = Vector2(154, 220)
+
+
+[node name="01_galeria" type="Node2D" unique_id=1346786099]
+process_physics_priority = 100
+script = ExtResource("1")
+proxima_fase = "res://Cenas/Cenarios/02_estufa.tscn"
+
+[node name="Background" type="Node2D" parent="." unique_id=1429902641]
+z_index = -100
+
+[node name="ceu1" type="Sprite2D" parent="Background" unique_id=1193017011]
+texture = ExtResource("2")
+centered = false
+
+[node name="ceu2" type="Sprite2D" parent="Background" unique_id=276627532]
+position = Vector2(1280, 0)
+texture = ExtResource("2")
+centered = false
+
+[node name="ceu3" type="Sprite2D" parent="Background" unique_id=645188504]
+position = Vector2(2560, 0)
+texture = ExtResource("2")
+centered = false
+
+[node name="DecoracaoDistante" type="Node2D" parent="." unique_id=1730506107]
+z_index = -80
+
+[node name="colina1" type="Sprite2D" parent="DecoracaoDistante" unique_id=1943831737]
+position = Vector2(-300, 220)
+texture = ExtResource("3")
+centered = false
+
+[node name="colina2" type="Sprite2D" parent="DecoracaoDistante" unique_id=830559385]
+position = Vector2(480, 220)
+texture = ExtResource("3")
+centered = false
+
+[node name="colina3" type="Sprite2D" parent="DecoracaoDistante" unique_id=1648106668]
+position = Vector2(1260, 220)
+texture = ExtResource("3")
+centered = false
+
+[node name="colina4" type="Sprite2D" parent="DecoracaoDistante" unique_id=1960781631]
+position = Vector2(2040, 220)
+texture = ExtResource("3")
+centered = false
+
+[node name="colina5" type="Sprite2D" parent="DecoracaoDistante" unique_id=1537450740]
+position = Vector2(2820, 220)
+texture = ExtResource("3")
+centered = false
+
+[node name="colina6" type="Sprite2D" parent="DecoracaoDistante" unique_id=230968874]
+position = Vector2(3600, 220)
+texture = ExtResource("3")
+centered = false
+
+[node name="colina7" type="Sprite2D" parent="DecoracaoDistante" unique_id=900280047]
+position = Vector2(4380, 220)
+texture = ExtResource("3")
+centered = false
+
+[node name="CampoDistante1" type="Polygon2D" parent="DecoracaoDistante" unique_id=610291060]
+color = Color(0.76, 0.82, 0.64, 1)
+polygon = PackedVector2Array(0, 500, 3840, 500, 3840, 720, 0, 720)
+
+[node name="nuvem1" type="Sprite2D" parent="DecoracaoDistante" unique_id=829531834]
+position = Vector2(150, 119)
+scale = Vector2(0.979787, 0.979787)
+texture = ExtResource("4")
+centered = false
+
+[node name="nuvem2" type="Sprite2D" parent="DecoracaoDistante" unique_id=1592784482]
+position = Vector2(770, 134)
+scale = Vector2(0.78741163, 0.78741163)
+texture = ExtResource("4")
+centered = false
+
+[node name="nuvem3" type="Sprite2D" parent="DecoracaoDistante" unique_id=1096118917]
+position = Vector2(1390, 108)
+scale = Vector2(0.6851352, 0.6851352)
+texture = ExtResource("4")
+centered = false
+
+[node name="nuvem4" type="Sprite2D" parent="DecoracaoDistante" unique_id=248259098]
+position = Vector2(2010, 73)
+scale = Vector2(0.73573065, 0.73573065)
+texture = ExtResource("4")
+centered = false
+
+[node name="nuvem5" type="Sprite2D" parent="DecoracaoDistante" unique_id=759084859]
+position = Vector2(2630, 133)
+scale = Vector2(0.8952036, 0.8952036)
+texture = ExtResource("4")
+centered = false
+
+[node name="nuvem6" type="Sprite2D" parent="DecoracaoDistante" unique_id=1591777604]
+position = Vector2(3250, 71)
+scale = Vector2(0.6072415, 0.6072415)
+texture = ExtResource("4")
+centered = false
+
+[node name="arvore_distante1" type="Sprite2D" parent="DecoracaoDistante" unique_id=275697233]
+position = Vector2(20, 322.25174)
+scale = Vector2(0.7794645, 0.7794645)
+texture = ExtResource("5")
+centered = false
+
+[node name="arvore_distante2" type="Sprite2D" parent="DecoracaoDistante" unique_id=787313617]
+position = Vector2(370, 319.24808)
+scale = Vector2(0.7916745, 0.7916745)
+texture = ExtResource("5")
+centered = false
+
+[node name="arvore_distante3" type="Sprite2D" parent="DecoracaoDistante" unique_id=1202928226]
+position = Vector2(720, 323.82346)
+scale = Vector2(0.77307546, 0.77307546)
+texture = ExtResource("5")
+centered = false
+
+[node name="arvore_distante4" type="Sprite2D" parent="DecoracaoDistante" unique_id=1101844093]
+position = Vector2(1070, 296.17975)
+scale = Vector2(0.8854482, 0.8854482)
+texture = ExtResource("5")
+centered = false
+
+[node name="arvore_distante5" type="Sprite2D" parent="DecoracaoDistante" unique_id=1771397734]
+position = Vector2(1420, 333.81543)
+scale = Vector2(0.73245764, 0.73245764)
+texture = ExtResource("5")
+centered = false
+
+[node name="arvore_distante6" type="Sprite2D" parent="DecoracaoDistante" unique_id=1681451656]
+position = Vector2(1770, 317.03433)
+scale = Vector2(0.80067337, 0.80067337)
+texture = ExtResource("5")
+centered = false
+
+[node name="arvore_distante7" type="Sprite2D" parent="DecoracaoDistante" unique_id=1941778256]
+position = Vector2(2120, 323.26022)
+scale = Vector2(0.7753649, 0.7753649)
+texture = ExtResource("5")
+centered = false
+
+[node name="arvore_distante8" type="Sprite2D" parent="DecoracaoDistante" unique_id=1288606617]
+position = Vector2(2470, 330.9568)
+scale = Vector2(0.74407816, 0.74407816)
+texture = ExtResource("5")
+centered = false
+
+[node name="arvore_distante9" type="Sprite2D" parent="DecoracaoDistante" unique_id=852508090]
+position = Vector2(2820, 331.71414)
+scale = Vector2(0.74099946, 0.74099946)
+texture = ExtResource("5")
+centered = false
+
+[node name="arvore_distante10" type="Sprite2D" parent="DecoracaoDistante" unique_id=1304385886]
+position = Vector2(3170, 297.48297)
+scale = Vector2(0.8801505, 0.8801505)
+texture = ExtResource("5")
+centered = false
+
+[node name="arvore_distante11" type="Sprite2D" parent="DecoracaoDistante" unique_id=1467346722]
+position = Vector2(3520, 320.49164)
+scale = Vector2(0.7866194, 0.7866194)
+texture = ExtResource("5")
+centered = false
+
+[node name="escola1" type="Sprite2D" parent="DecoracaoDistante" unique_id=966976007]
+modulate = Color(0.95, 0.95, 0.86, 1)
+position = Vector2(80, 200)
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("10")
+centered = false
+
+[node name="Arquitetura" type="Node2D" parent="." unique_id=1772010354]
+z_index = -50
+
+[node name="galeria_arco1" type="Sprite2D" parent="Arquitetura" unique_id=1535383606]
+position = Vector2(0, 198)
+texture = ExtResource("11")
+centered = false
+
+[node name="galeria_arco2" type="Sprite2D" parent="Arquitetura" unique_id=1498761639]
+position = Vector2(320, 198)
+texture = ExtResource("11")
+centered = false
+
+[node name="galeria_arco3" type="Sprite2D" parent="Arquitetura" unique_id=667376318]
+position = Vector2(640, 198)
+texture = ExtResource("11")
+centered = false
+
+[node name="galeria_arco4" type="Sprite2D" parent="Arquitetura" unique_id=503334656]
+position = Vector2(960, 198)
+texture = ExtResource("11")
+centered = false
+
+[node name="galeria_arco5" type="Sprite2D" parent="Arquitetura" unique_id=394496582]
+position = Vector2(1472, 198)
+texture = ExtResource("11")
+centered = false
+
+[node name="galeria_arco6" type="Sprite2D" parent="Arquitetura" unique_id=594842575]
+position = Vector2(1792, 198)
+texture = ExtResource("11")
+centered = false
+
+[node name="galeria_arco7" type="Sprite2D" parent="Arquitetura" unique_id=1734817643]
+position = Vector2(2112, 198)
+texture = ExtResource("11")
+centered = false
+
+[node name="cerca1" type="Sprite2D" parent="Arquitetura" unique_id=2034935538]
+position = Vector2(2790, 496.95)
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("15")
+centered = false
+
+[node name="cerca2" type="Sprite2D" parent="Arquitetura" unique_id=1020047395]
+position = Vector2(2918, 528.95)
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("15")
+centered = false
+
+[node name="cerca3" type="Sprite2D" parent="Arquitetura" unique_id=65628921]
+position = Vector2(3046, 528.95)
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("15")
+centered = false
+
+[node name="cerca4" type="Sprite2D" parent="Arquitetura" unique_id=380493539]
+position = Vector2(3174, 528.95)
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("15")
+centered = false
+
+[node name="cerca5" type="Sprite2D" parent="Arquitetura" unique_id=603996322]
+position = Vector2(3302, 528.95)
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("15")
+centered = false
+
+[node name="estufa_modulo1" type="Sprite2D" parent="Arquitetura" unique_id=558069429]
+position = Vector2(3110, 238)
+texture = ExtResource("16")
+centered = false
+
+[node name="estufa_entrada1" type="Sprite2D" parent="Arquitetura" unique_id=235138121]
+position = Vector2(3430, 224)
+texture = ExtResource("17")
+centered = false
+
+[node name="Vegetacao" type="Node2D" parent="." unique_id=1842398958]
+z_index = -30
+
+[node name="jabuticabeira1" type="Sprite2D" parent="Vegetacao" unique_id=1055767432]
+position = Vector2(415.52, 162.2)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("12")
+centered = false
+
+[node name="jabuticabeira2" type="Sprite2D" parent="Vegetacao" unique_id=834065082]
+position = Vector2(1343.2, 223.4)
+scale = Vector2(0.76, 0.76)
+texture = ExtResource("12")
+centered = false
+
+[node name="jabuticabeira3" type="Sprite2D" parent="Vegetacao" unique_id=1118871315]
+position = Vector2(2440, 120)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("12")
+centered = false
+
+[node name="canteiro1" type="Sprite2D" parent="Vegetacao" unique_id=2100907351]
+position = Vector2(120, 530)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("13")
+centered = false
+
+[node name="canteiro2" type="Sprite2D" parent="Vegetacao" unique_id=282944693]
+position = Vector2(901.3, 466)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("13")
+centered = false
+
+[node name="canteiro3" type="Sprite2D" parent="Vegetacao" unique_id=1289992317]
+position = Vector2(1630, 530)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("13")
+centered = false
+
+[node name="canteiro4" type="Sprite2D" parent="Vegetacao" unique_id=1776719852]
+position = Vector2(2080, 498)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("13")
+centered = false
+
+[node name="flor_amarela1" type="Sprite2D" parent="Vegetacao" unique_id=1659252215]
+position = Vector2(47, 580.74023)
+scale = Vector2(0.5041897, 0.5041897)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_amarela2" type="Sprite2D" parent="Vegetacao" unique_id=2006941688]
+position = Vector2(83, 583.3564)
+scale = Vector2(0.46199337, 0.46199337)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_lilas1" type="Sprite2D" parent="Vegetacao" unique_id=1383013250]
+position = Vector2(113, 577.31604)
+scale = Vector2(0.55941874, 0.55941874)
+texture = ExtResource("23")
+centered = false
+
+[node name="arbusto1" type="Sprite2D" parent="Vegetacao" unique_id=1552060822]
+position = Vector2(215, 535.9189)
+scale = Vector2(0.98790956, 0.98790956)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_amarela3" type="Sprite2D" parent="Vegetacao" unique_id=543329922]
+position = Vector2(227, 572.5271)
+scale = Vector2(0.63666004, 0.63666004)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_rosa1" type="Sprite2D" parent="Vegetacao" unique_id=2823133]
+position = Vector2(263, 583.3596)
+scale = Vector2(0.46194193, 0.46194193)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_rosa2" type="Sprite2D" parent="Vegetacao" unique_id=280110354]
+position = Vector2(293, 573.1014)
+scale = Vector2(0.62739676, 0.62739676)
+texture = ExtResource("25")
+centered = false
+
+[node name="arbusto2" type="Sprite2D" parent="Vegetacao" unique_id=756428274]
+position = Vector2(395, 547.9026)
+scale = Vector2(0.83022887, 0.83022887)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_amarela4" type="Sprite2D" parent="Vegetacao" unique_id=863298630]
+position = Vector2(407, 583.4466)
+scale = Vector2(0.4605392, 0.4605392)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_rosa3" type="Sprite2D" parent="Vegetacao" unique_id=285331850]
+position = Vector2(443, 578.222)
+scale = Vector2(0.54480666, 0.54480666)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_amarela5" type="Sprite2D" parent="Vegetacao" unique_id=718760010]
+position = Vector2(473, 575.2064)
+scale = Vector2(0.5934444, 0.5934444)
+texture = ExtResource("22")
+centered = false
+
+[node name="arbusto3" type="Sprite2D" parent="Vegetacao" unique_id=1818607359]
+position = Vector2(643.278, 507.22552)
+scale = Vector2(0.94440114, 0.94440114)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_amarela6" type="Sprite2D" parent="Vegetacao" unique_id=1183268242]
+position = Vector2(587, 576.73914)
+scale = Vector2(0.568724, 0.568724)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_rosa4" type="Sprite2D" parent="Vegetacao" unique_id=1043502327]
+position = Vector2(623, 577.3647)
+scale = Vector2(0.5586338, 0.5586338)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_amarela7" type="Sprite2D" parent="Vegetacao" unique_id=613707507]
+position = Vector2(653, 541.9387)
+scale = Vector2(0.6138911, 0.6138911)
+texture = ExtResource("22")
+centered = false
+
+[node name="arbusto4" type="Sprite2D" parent="Vegetacao" unique_id=792054110]
+position = Vector2(755, 521.50415)
+scale = Vector2(0.7565247, 0.7565247)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_amarela8" type="Sprite2D" parent="Vegetacao" unique_id=827464340]
+position = Vector2(767, 548.86206)
+scale = Vector2(0.5022246, 0.5022246)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_lilas2" type="Sprite2D" parent="Vegetacao" unique_id=630993951]
+position = Vector2(803, 552.41003)
+scale = Vector2(0.44499934, 0.44499934)
+texture = ExtResource("23")
+centered = false
+
+[node name="flor_amarela9" type="Sprite2D" parent="Vegetacao" unique_id=1264733306]
+position = Vector2(833, 543.85626)
+scale = Vector2(0.58296376, 0.58296376)
+texture = ExtResource("22")
+centered = false
+
+[node name="arbusto5" type="Sprite2D" parent="Vegetacao" unique_id=1519433671]
+position = Vector2(935, 483.49066)
+scale = Vector2(0.83564913, 0.83564913)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_lilas3" type="Sprite2D" parent="Vegetacao" unique_id=153285065]
+position = Vector2(947, 514.31525)
+scale = Vector2(0.54330266, 0.54330266)
+texture = ExtResource("23")
+centered = false
+
+[node name="flor_amarela10" type="Sprite2D" parent="Vegetacao" unique_id=1764742938]
+position = Vector2(983, 509.10834)
+scale = Vector2(0.627285, 0.627285)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_rosa5" type="Sprite2D" parent="Vegetacao" unique_id=1717725588]
+position = Vector2(1013, 515.9783)
+scale = Vector2(0.5164795, 0.5164795)
+texture = ExtResource("25")
+centered = false
+
+[node name="arbusto6" type="Sprite2D" parent="Vegetacao" unique_id=858161724]
+position = Vector2(1156.2114, 521.41327)
+scale = Vector2(0.75772035, 0.75772035)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_lilas4" type="Sprite2D" parent="Vegetacao" unique_id=1672647465]
+position = Vector2(1127, 521.53125)
+scale = Vector2(0.42691502, 0.42691502)
+texture = ExtResource("23")
+centered = false
+
+[node name="flor_lilas5" type="Sprite2D" parent="Vegetacao" unique_id=1131398496]
+position = Vector2(1163, 551.4726)
+scale = Vector2(0.46011925, 0.46011925)
+texture = ExtResource("23")
+centered = false
+
+[node name="flor_amarela11" type="Sprite2D" parent="Vegetacao" unique_id=1033154660]
+position = Vector2(1193, 545.32367)
+scale = Vector2(0.5592956, 0.5592956)
+texture = ExtResource("22")
+centered = false
+
+[node name="arbusto7" type="Sprite2D" parent="Vegetacao" unique_id=696343648]
+position = Vector2(1295, 522.4175)
+scale = Vector2(0.7445066, 0.7445066)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_rosa6" type="Sprite2D" parent="Vegetacao" unique_id=1151197570]
+position = Vector2(1307, 550.11554)
+scale = Vector2(0.48200753, 0.48200753)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_amarela12" type="Sprite2D" parent="Vegetacao" unique_id=704760969]
+position = Vector2(1343, 541.0464)
+scale = Vector2(0.6282843, 0.6282843)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_amarela13" type="Sprite2D" parent="Vegetacao" unique_id=864054484]
+position = Vector2(1373, 547.38495)
+scale = Vector2(0.526049, 0.526049)
+texture = ExtResource("22")
+centered = false
+
+[node name="arbusto8" type="Sprite2D" parent="Vegetacao" unique_id=2071238080]
+position = Vector2(1475.6445, 544.79706)
+scale = Vector2(0.87109137, 0.87109137)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_lilas6" type="Sprite2D" parent="Vegetacao" unique_id=592517534]
+position = Vector2(1487, 572.92505)
+scale = Vector2(0.6302407, 0.6302407)
+texture = ExtResource("23")
+centered = false
+
+[node name="flor_rosa7" type="Sprite2D" parent="Vegetacao" unique_id=448405613]
+position = Vector2(1523, 584.8119)
+scale = Vector2(0.43851802, 0.43851802)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_rosa8" type="Sprite2D" parent="Vegetacao" unique_id=1734570376]
+position = Vector2(1553, 575.1863)
+scale = Vector2(0.59377015, 0.59377015)
+texture = ExtResource("25")
+centered = false
+
+[node name="arbusto9" type="Sprite2D" parent="Vegetacao" unique_id=1925072001]
+position = Vector2(1655, 551.2338)
+scale = Vector2(0.78639674, 0.78639674)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_rosa9" type="Sprite2D" parent="Vegetacao" unique_id=1707662763]
+position = Vector2(1667, 583.8584)
+scale = Vector2(0.4538966, 0.4538966)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_amarela14" type="Sprite2D" parent="Vegetacao" unique_id=1314828142]
+position = Vector2(1703, 585.7942)
+scale = Vector2(0.4226743, 0.4226743)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_rosa10" type="Sprite2D" parent="Vegetacao" unique_id=41381474]
+position = Vector2(1733, 573.9973)
+scale = Vector2(0.61294645, 0.61294645)
+texture = ExtResource("25")
+centered = false
+
+[node name="arbusto10" type="Sprite2D" parent="Vegetacao" unique_id=1361782351]
+position = Vector2(1835, 540.47534)
+scale = Vector2(0.9279562, 0.9279562)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_lilas7" type="Sprite2D" parent="Vegetacao" unique_id=548359210]
+position = Vector2(1847, 577.9502)
+scale = Vector2(0.54919046, 0.54919046)
+texture = ExtResource("23")
+centered = false
+
+[node name="flor_lilas8" type="Sprite2D" parent="Vegetacao" unique_id=1193307921]
+position = Vector2(1883, 578.65247)
+scale = Vector2(0.5378639, 0.5378639)
+texture = ExtResource("23")
+centered = false
+
+[node name="flor_rosa11" type="Sprite2D" parent="Vegetacao" unique_id=495196292]
+position = Vector2(1913, 585.9347)
+scale = Vector2(0.420408, 0.420408)
+texture = ExtResource("25")
+centered = false
+
+[node name="arbusto11" type="Sprite2D" parent="Vegetacao" unique_id=1349567635]
+position = Vector2(2052.027, 518.6111)
+scale = Vector2(0.79459125, 0.79459125)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_amarela15" type="Sprite2D" parent="Vegetacao" unique_id=533806056]
+position = Vector2(2027, 580.4575)
+scale = Vector2(0.5087492, 0.5087492)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_lilas9" type="Sprite2D" parent="Vegetacao" unique_id=233418582]
+position = Vector2(2063, 543.73145)
+scale = Vector2(0.5849763, 0.5849763)
+texture = ExtResource("23")
+centered = false
+
+[node name="flor_amarela16" type="Sprite2D" parent="Vegetacao" unique_id=889712793]
+position = Vector2(2093, 547.8896)
+scale = Vector2(0.5179095, 0.5179095)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_amarela17" type="Sprite2D" parent="Vegetacao" unique_id=334751919]
+position = Vector2(2207, 545.9749)
+scale = Vector2(0.5487918, 0.5487918)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_rosa12" type="Sprite2D" parent="Vegetacao" unique_id=661370864]
+position = Vector2(2243, 551.342)
+scale = Vector2(0.462226, 0.462226)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_lilas10" type="Sprite2D" parent="Vegetacao" unique_id=1992722177]
+position = Vector2(2273, 548.99066)
+scale = Vector2(0.5001503, 0.5001503)
+texture = ExtResource("23")
+centered = false
+
+[node name="arbusto12" type="Sprite2D" parent="Vegetacao" unique_id=1529287442]
+position = Vector2(2375, 472.33124)
+scale = Vector2(0.9824835, 0.9824835)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_rosa13" type="Sprite2D" parent="Vegetacao" unique_id=1843633850]
+position = Vector2(2387, 521.18243)
+scale = Vector2(0.43254155, 0.43254155)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_amarela18" type="Sprite2D" parent="Vegetacao" unique_id=195232162]
+position = Vector2(2423, 511.66684)
+scale = Vector2(0.5860185, 0.5860185)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_rosa14" type="Sprite2D" parent="Vegetacao" unique_id=2058641415]
+position = Vector2(2453, 511.03784)
+scale = Vector2(0.59616363, 0.59616363)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_lilas11" type="Sprite2D" parent="Vegetacao" unique_id=1091612550]
+position = Vector2(2567, 550.86316)
+scale = Vector2(0.46994925, 0.46994925)
+texture = ExtResource("23")
+centered = false
+
+[node name="flor_rosa15" type="Sprite2D" parent="Vegetacao" unique_id=1730233814]
+position = Vector2(2603, 551.4018)
+scale = Vector2(0.46126106, 0.46126106)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_amarela19" type="Sprite2D" parent="Vegetacao" unique_id=1962032931]
+position = Vector2(2633, 540.6214)
+scale = Vector2(0.6351387, 0.6351387)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_amarela20" type="Sprite2D" parent="Vegetacao" unique_id=590545955]
+position = Vector2(2747, 548.98737)
+scale = Vector2(0.5002037, 0.5002037)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_lilas12" type="Sprite2D" parent="Vegetacao" unique_id=977366027]
+position = Vector2(2783, 544.64685)
+scale = Vector2(0.57021224, 0.57021224)
+texture = ExtResource("23")
+centered = false
+
+[node name="flor_amarela21" type="Sprite2D" parent="Vegetacao" unique_id=779752624]
+position = Vector2(2813, 551.51263)
+scale = Vector2(0.4594738, 0.4594738)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_amarela22" type="Sprite2D" parent="Vegetacao" unique_id=1936947928]
+position = Vector2(2927, 575.15735)
+scale = Vector2(0.59423596, 0.59423596)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_amarela23" type="Sprite2D" parent="Vegetacao" unique_id=439948793]
+position = Vector2(2963, 576.2164)
+scale = Vector2(0.57715493, 0.57715493)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_amarela24" type="Sprite2D" parent="Vegetacao" unique_id=1708004051]
+position = Vector2(2993, 579.63556)
+scale = Vector2(0.52200687, 0.52200687)
+texture = ExtResource("22")
+centered = false
+
+[node name="arbusto13" type="Sprite2D" parent="Vegetacao" unique_id=1391669539]
+position = Vector2(3095, 540.7873)
+scale = Vector2(0.9238513, 0.9238513)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_lilas13" type="Sprite2D" parent="Vegetacao" unique_id=1368008420]
+position = Vector2(3107, 573.4631)
+scale = Vector2(0.62156284, 0.62156284)
+texture = ExtResource("23")
+centered = false
+
+[node name="flor_amarela25" type="Sprite2D" parent="Vegetacao" unique_id=2072739929]
+position = Vector2(3143, 584.6476)
+scale = Vector2(0.44116804, 0.44116804)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_amarela26" type="Sprite2D" parent="Vegetacao" unique_id=616144200]
+position = Vector2(3173, 573.64355)
+scale = Vector2(0.6186528, 0.6186528)
+texture = ExtResource("22")
+centered = false
+
+[node name="arbusto14" type="Sprite2D" parent="Vegetacao" unique_id=1178356817]
+position = Vector2(3275, 560.29553)
+scale = Vector2(0.6671639, 0.6671639)
+texture = ExtResource("24")
+centered = false
+
+[node name="flor_amarela27" type="Sprite2D" parent="Vegetacao" unique_id=1970060056]
+position = Vector2(3287, 580.6763)
+scale = Vector2(0.50522166, 0.50522166)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_amarela28" type="Sprite2D" parent="Vegetacao" unique_id=288992150]
+position = Vector2(3323, 580.77686)
+scale = Vector2(0.5035991, 0.5035991)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_amarela29" type="Sprite2D" parent="Vegetacao" unique_id=868407766]
+position = Vector2(3353, 583.5276)
+scale = Vector2(0.45923242, 0.45923242)
+texture = ExtResource("22")
+centered = false
+
+[node name="flor_rosa16" type="Sprite2D" parent="Vegetacao" unique_id=30077816]
+position = Vector2(3467, 574.09045)
+scale = Vector2(0.61144423, 0.61144423)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_rosa17" type="Sprite2D" parent="Vegetacao" unique_id=337226851]
+position = Vector2(3503, 580.3265)
+scale = Vector2(0.5108637, 0.5108637)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_rosa18" type="Sprite2D" parent="Vegetacao" unique_id=198604826]
+position = Vector2(3533, 577.43475)
+scale = Vector2(0.55750424, 0.55750424)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_rosa19" type="Sprite2D" parent="Vegetacao" unique_id=1510366614]
+position = Vector2(3647, 575.9423)
+scale = Vector2(0.58157593, 0.58157593)
+texture = ExtResource("25")
+centered = false
+
+[node name="flor_lilas14" type="Sprite2D" parent="Vegetacao" unique_id=301381674]
+position = Vector2(3683, 572.0163)
+scale = Vector2(0.644898, 0.644898)
+texture = ExtResource("23")
+centered = false
+
+[node name="flor_amarela30" type="Sprite2D" parent="Vegetacao" unique_id=262805537]
+position = Vector2(3713, 577.5978)
+scale = Vector2(0.55487466, 0.55487466)
+texture = ExtResource("22")
+centered = false
+
+[node name="ObjetosCenario" type="Node2D" parent="." unique_id=502413498]
+z_index = -10
+
+[node name="Apoio1" type="Polygon2D" parent="ObjetosCenario" unique_id=1510198360]
+color = Color(0.57, 0.48, 0.33, 1)
+polygon = PackedVector2Array(1103, 472, 1112, 472, 1112, 544, 1103, 544)
+
+[node name="Apoio2" type="Polygon2D" parent="ObjetosCenario" unique_id=119551421]
+color = Color(0.57, 0.48, 0.33, 1)
+polygon = PackedVector2Array(1255, 472, 1264, 472, 1264, 576, 1255, 576)
+
+[node name="Apoio3" type="Polygon2D" parent="ObjetosCenario" unique_id=1399064180]
+color = Color(0.57, 0.48, 0.33, 1)
+polygon = PackedVector2Array(2255, 500, 2264, 500, 2264, 576, 2255, 576)
+
+[node name="Apoio4" type="Polygon2D" parent="ObjetosCenario" unique_id=1270996004]
+color = Color(0.57, 0.48, 0.33, 1)
+polygon = PackedVector2Array(2407, 500, 2416, 500, 2416, 544, 2407, 544)
+
+[node name="banco1" type="Sprite2D" parent="ObjetosCenario" unique_id=1522264852]
+position = Vector2(70, 531.1)
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("14")
+centered = false
+
+[node name="banco2" type="Sprite2D" parent="ObjetosCenario" unique_id=554268417]
+position = Vector2(1520, 531.1)
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("14")
+centered = false
+
+[node name="banco3" type="Sprite2D" parent="ObjetosCenario" unique_id=1185967391]
+position = Vector2(2676.25, 499.1)
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("14")
+centered = false
+
+[node name="folhagem_vaso1" type="Sprite2D" parent="ObjetosCenario" unique_id=1319738588]
+position = Vector2(2960, 463.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("20")
+centered = false
+
+[node name="folhagem_vaso2" type="Sprite2D" parent="ObjetosCenario" unique_id=2019598469]
+position = Vector2(3250, 463.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("20")
+centered = false
+
+[node name="folhagem_vaso3" type="Sprite2D" parent="ObjetosCenario" unique_id=1620335119]
+position = Vector2(3360, 463.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("20")
+centered = false
+
+[node name="grama_tufo1" type="Sprite2D" parent="ObjetosCenario" unique_id=451260478]
+position = Vector2(60, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo2" type="Sprite2D" parent="ObjetosCenario" unique_id=277450516]
+position = Vector2(200, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo3" type="Sprite2D" parent="ObjetosCenario" unique_id=1525009340]
+position = Vector2(340, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo4" type="Sprite2D" parent="ObjetosCenario" unique_id=349642436]
+position = Vector2(480, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo5" type="Sprite2D" parent="ObjetosCenario" unique_id=236201585]
+position = Vector2(620, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo6" type="Sprite2D" parent="ObjetosCenario" unique_id=1662274245]
+position = Vector2(760, 566.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo7" type="Sprite2D" parent="ObjetosCenario" unique_id=1588935423]
+position = Vector2(900, 534.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo8" type="Sprite2D" parent="ObjetosCenario" unique_id=1467845678]
+position = Vector2(1040, 534.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo9" type="Sprite2D" parent="ObjetosCenario" unique_id=1792532549]
+position = Vector2(1180, 566.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo10" type="Sprite2D" parent="ObjetosCenario" unique_id=974968777]
+position = Vector2(1320, 566.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo11" type="Sprite2D" parent="ObjetosCenario" unique_id=1379301201]
+position = Vector2(1460, 566.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo12" type="Sprite2D" parent="ObjetosCenario" unique_id=1155527716]
+position = Vector2(1600, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo13" type="Sprite2D" parent="ObjetosCenario" unique_id=1865784755]
+position = Vector2(1740, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo14" type="Sprite2D" parent="ObjetosCenario" unique_id=1683052557]
+position = Vector2(1880, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo15" type="Sprite2D" parent="ObjetosCenario" unique_id=1111347932]
+position = Vector2(2020, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo16" type="Sprite2D" parent="ObjetosCenario" unique_id=1145147740]
+position = Vector2(2160, 566.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo17" type="Sprite2D" parent="ObjetosCenario" unique_id=365531349]
+position = Vector2(2300, 566.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo18" type="Sprite2D" parent="ObjetosCenario" unique_id=1389085979]
+position = Vector2(2440, 534.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo19" type="Sprite2D" parent="ObjetosCenario" unique_id=118619012]
+position = Vector2(2580, 566.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo20" type="Sprite2D" parent="ObjetosCenario" unique_id=627461912]
+position = Vector2(2720, 566.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo21" type="Sprite2D" parent="ObjetosCenario" unique_id=1579289988]
+position = Vector2(2860, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo22" type="Sprite2D" parent="ObjetosCenario" unique_id=327916882]
+position = Vector2(3000, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo23" type="Sprite2D" parent="ObjetosCenario" unique_id=854295581]
+position = Vector2(3140, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo24" type="Sprite2D" parent="ObjetosCenario" unique_id=1133531820]
+position = Vector2(3280, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo25" type="Sprite2D" parent="ObjetosCenario" unique_id=665954614]
+position = Vector2(3420, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo26" type="Sprite2D" parent="ObjetosCenario" unique_id=972329688]
+position = Vector2(3560, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="grama_tufo27" type="Sprite2D" parent="ObjetosCenario" unique_id=542641562]
+position = Vector2(3700, 598.45)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("26")
+centered = false
+
+[node name="Terreno" type="Node2D" parent="." unique_id=1205082944]
+
+[node name="Trecho01" type="Node2D" parent="Terreno" unique_id=1060921100]
+
+[node name="Solo1" type="StaticBody2D" parent="Terreno/Trecho01" unique_id=1290886237]
+position = Vector2(320, 684)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Terreno/Trecho01/Solo1" unique_id=997904752]
+shape = SubResource("Shape0")
+
+[node name="Terra1" type="Sprite2D" parent="Terreno/Trecho01" unique_id=590511431]
+texture_repeat = 2
+position = Vector2(0, 608)
+texture = ExtResource("6")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 640, 152)
+
+[node name="Superficie1" type="Sprite2D" parent="Terreno/Trecho01" unique_id=1538634982]
+texture_repeat = 2
+position = Vector2(0, 608)
+texture = ExtResource("7")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 640, 64)
+
+[node name="Trecho02" type="Node2D" parent="Terreno" unique_id=110351559]
+
+[node name="Solo2" type="StaticBody2D" parent="Terreno/Trecho02" unique_id=2054191564]
+position = Vector2(768, 668)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Terreno/Trecho02/Solo2" unique_id=494968608]
+shape = SubResource("Shape1")
+
+[node name="Terra2" type="Sprite2D" parent="Terreno/Trecho02" unique_id=184936217]
+texture_repeat = 2
+position = Vector2(640, 576)
+texture = ExtResource("6")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 184)
+
+[node name="Superficie2" type="Sprite2D" parent="Terreno/Trecho02" unique_id=1954737288]
+texture_repeat = 2
+position = Vector2(640, 576)
+texture = ExtResource("7")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 64)
+
+[node name="Trecho03" type="Node2D" parent="Terreno" unique_id=1541170514]
+
+[node name="Solo3" type="StaticBody2D" parent="Terreno/Trecho03" unique_id=536840828]
+position = Vector2(1024, 652)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Terreno/Trecho03/Solo3" unique_id=1014465374]
+shape = SubResource("Shape2")
+
+[node name="Terra3" type="Sprite2D" parent="Terreno/Trecho03" unique_id=1023233866]
+texture_repeat = 2
+position = Vector2(896, 544)
+texture = ExtResource("6")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 216)
+
+[node name="Superficie3" type="Sprite2D" parent="Terreno/Trecho03" unique_id=1413195844]
+texture_repeat = 2
+position = Vector2(896, 544)
+texture = ExtResource("7")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 64)
+
+[node name="Trecho04" type="Node2D" parent="Terreno" unique_id=549721245]
+
+[node name="Solo4" type="StaticBody2D" parent="Terreno/Trecho04" unique_id=1218982146]
+position = Vector2(1312, 668)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Terreno/Trecho04/Solo4" unique_id=1956582276]
+shape = SubResource("Shape3")
+
+[node name="Terra4" type="Sprite2D" parent="Terreno/Trecho04" unique_id=2113074612]
+texture_repeat = 2
+position = Vector2(1152, 576)
+texture = ExtResource("6")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 320, 184)
+
+[node name="Superficie4" type="Sprite2D" parent="Terreno/Trecho04" unique_id=766809461]
+texture_repeat = 2
+position = Vector2(1152, 576)
+texture = ExtResource("7")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 320, 64)
+
+[node name="Trecho05" type="Node2D" parent="Terreno" unique_id=1414403576]
+
+[node name="Solo5" type="StaticBody2D" parent="Terreno/Trecho05" unique_id=226373905]
+position = Vector2(1760, 684)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Terreno/Trecho05/Solo5" unique_id=504629269]
+shape = SubResource("Shape4")
+
+[node name="Terra5" type="Sprite2D" parent="Terreno/Trecho05" unique_id=451939662]
+texture_repeat = 2
+position = Vector2(1472, 608)
+texture = ExtResource("6")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 152)
+
+[node name="Superficie5" type="Sprite2D" parent="Terreno/Trecho05" unique_id=1869630395]
+texture_repeat = 2
+position = Vector2(1472, 608)
+texture = ExtResource("7")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 64)
+
+[node name="Trecho06" type="Node2D" parent="Terreno" unique_id=2090899141]
+
+[node name="Solo6" type="StaticBody2D" parent="Terreno/Trecho06" unique_id=1061727467]
+position = Vector2(2176, 668)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Terreno/Trecho06/Solo6" unique_id=463888375]
+shape = SubResource("Shape5")
+
+[node name="Terra6" type="Sprite2D" parent="Terreno/Trecho06" unique_id=713762530]
+texture_repeat = 2
+position = Vector2(2048, 576)
+texture = ExtResource("6")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 184)
+
+[node name="Superficie6" type="Sprite2D" parent="Terreno/Trecho06" unique_id=1778733734]
+texture_repeat = 2
+position = Vector2(2048, 576)
+texture = ExtResource("7")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 64)
+
+[node name="Trecho07" type="Node2D" parent="Terreno" unique_id=283469019]
+
+[node name="Solo7" type="StaticBody2D" parent="Terreno/Trecho07" unique_id=1444351199]
+position = Vector2(2432, 652)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Terreno/Trecho07/Solo7" unique_id=301002568]
+shape = SubResource("Shape6")
+
+[node name="Terra7" type="Sprite2D" parent="Terreno/Trecho07" unique_id=1652316574]
+texture_repeat = 2
+position = Vector2(2304, 544)
+texture = ExtResource("6")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 216)
+
+[node name="Superficie7" type="Sprite2D" parent="Terreno/Trecho07" unique_id=1260179788]
+texture_repeat = 2
+position = Vector2(2304, 544)
+texture = ExtResource("7")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 64)
+
+[node name="Trecho08" type="Node2D" parent="Terreno" unique_id=2083701391]
+
+[node name="Solo8" type="StaticBody2D" parent="Terreno/Trecho08" unique_id=1733306415]
+position = Vector2(2688, 668)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Terreno/Trecho08/Solo8" unique_id=1290797466]
+shape = SubResource("Shape7")
+
+[node name="Terra8" type="Sprite2D" parent="Terreno/Trecho08" unique_id=355888095]
+texture_repeat = 2
+position = Vector2(2560, 576)
+texture = ExtResource("6")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 184)
+
+[node name="Superficie8" type="Sprite2D" parent="Terreno/Trecho08" unique_id=779351647]
+texture_repeat = 2
+position = Vector2(2560, 576)
+texture = ExtResource("7")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 64)
+
+[node name="Trecho09" type="Node2D" parent="Terreno" unique_id=908388181]
+
+[node name="Solo9" type="StaticBody2D" parent="Terreno/Trecho09" unique_id=1358764516]
+position = Vector2(3328, 684)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Terreno/Trecho09/Solo9" unique_id=1532569890]
+shape = SubResource("Shape8")
+
+[node name="Terra9" type="Sprite2D" parent="Terreno/Trecho09" unique_id=2110461030]
+texture_repeat = 2
+position = Vector2(2816, 608)
+texture = ExtResource("6")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1024, 152)
+
+[node name="Superficie9" type="Sprite2D" parent="Terreno/Trecho09" unique_id=382968810]
+texture_repeat = 2
+position = Vector2(2816, 608)
+texture = ExtResource("7")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1024, 64)
+
+[node name="Acabamento1" type="Sprite2D" parent="Terreno" unique_id=1063305419]
+position = Vector2(637, 576)
+texture = ExtResource("8")
+centered = false
+
+[node name="Acabamento2" type="Sprite2D" parent="Terreno" unique_id=1334539520]
+position = Vector2(893, 544)
+texture = ExtResource("8")
+centered = false
+
+[node name="Acabamento3" type="Sprite2D" parent="Terreno" unique_id=1177321052]
+position = Vector2(1131, 544)
+texture = ExtResource("8")
+centered = false
+flip_h = true
+
+[node name="Acabamento4" type="Sprite2D" parent="Terreno" unique_id=1171635945]
+position = Vector2(1451, 576)
+texture = ExtResource("8")
+centered = false
+flip_h = true
+
+[node name="Acabamento5" type="Sprite2D" parent="Terreno" unique_id=1334635436]
+position = Vector2(2045, 576)
+texture = ExtResource("8")
+centered = false
+
+[node name="Acabamento6" type="Sprite2D" parent="Terreno" unique_id=1160986666]
+position = Vector2(2301, 544)
+texture = ExtResource("8")
+centered = false
+
+[node name="Acabamento7" type="Sprite2D" parent="Terreno" unique_id=768724817]
+position = Vector2(2539, 544)
+texture = ExtResource("8")
+centered = false
+flip_h = true
+
+[node name="Acabamento8" type="Sprite2D" parent="Terreno" unique_id=557640534]
+position = Vector2(2795, 576)
+texture = ExtResource("8")
+centered = false
+flip_h = true
+
+[node name="LimiteEsquerdo1" type="StaticBody2D" parent="Terreno" unique_id=2104647170]
+position = Vector2(-16, 380)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Terreno/LimiteEsquerdo1" unique_id=464506905]
+shape = SubResource("Shape9")
+
+[node name="LimiteDireito1" type="StaticBody2D" parent="Terreno" unique_id=1850681438]
+position = Vector2(3856, 380)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Terreno/LimiteDireito1" unique_id=1831085254]
+shape = SubResource("Shape10")
+
+[node name="Plataformas" type="Node2D" parent="." unique_id=2098162255]
+z_index = 2
+
+[node name="Patamar1" type="StaticBody2D" parent="Plataformas" unique_id=285605842]
+position = Vector2(1184, 460)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Plataformas/Patamar1" unique_id=1018870726]
+shape = SubResource("Shape11")
+one_way_collision = true
+one_way_collision_margin = 8.0
+
+[node name="Tablado1" type="Sprite2D" parent="Plataformas" unique_id=629885174]
+texture_repeat = 2
+position = Vector2(1088, 448)
+texture = ExtResource("9")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 192, 32)
+
+[node name="Patamar2" type="StaticBody2D" parent="Plataformas" unique_id=959367438]
+position = Vector2(2336, 488)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Plataformas/Patamar2" unique_id=488323038]
+shape = SubResource("Shape12")
+one_way_collision = true
+one_way_collision_margin = 8.0
+
+[node name="Tablado2" type="Sprite2D" parent="Plataformas" unique_id=85375859]
+texture_repeat = 2
+position = Vector2(2240, 476)
+texture = ExtResource("9")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 192, 32)
+
+[node name="Passarela" type="StaticBody2D" parent="Plataformas" unique_id=893673198]
+position = Vector2(1380, 360)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionShape2D" parent="Plataformas/Passarela" unique_id=1828879236]
+shape = SubResource("PassarelaShape")
+one_way_collision = true
+
+[node name="Madeira" type="Sprite2D" parent="Plataformas/Passarela" unique_id=814521588]
+texture_repeat = 2
+position = Vector2(-72, -10)
+texture = ExtResource("9")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 144, 32)
+
+[node name="Telhado" type="StaticBody2D" parent="Plataformas" unique_id=1047820765]
+position = Vector2(1472, 198)
+collision_mask = 0
+
+[node name="Colisao" type="CollisionPolygon2D" parent="Plataformas/Telhado" unique_id=1769739944]
+polygon = PackedVector2Array(0, 75, 19, 28, 301, 28, 320, 75, 320, 83, 0, 83)
+one_way_collision = true
+
+[node name="Sinalizacao" type="Node2D" parent="." unique_id=847564041]
+z_index = 4
+
+[node name="placa_direcao1" type="Sprite2D" parent="Sinalizacao" unique_id=375767651]
+position = Vector2(400, 538)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("30")
+centered = false
+
+[node name="placa_direcao2" type="Sprite2D" parent="Sinalizacao" unique_id=5355329]
+position = Vector2(3500, 538)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("30")
+centered = false
+
+[node name="Personagens" type="Node2D" parent="." unique_id=182361441]
+z_index = 10
+
+[node name="Jogador1" parent="Personagens" unique_id=305312791 instance=ExtResource("31")]
+position = Vector2(180, 608)
+
+[node name="Jogador2" parent="Personagens" unique_id=389131466 instance=ExtResource("32")]
+position = Vector2(280, 608)
+jogador = 2
+
+[node name="DecoracaoFrontal" type="Node2D" parent="." unique_id=1663448699]
+z_index = 20
+
+[node name="samambaia1" type="Sprite2D" parent="DecoracaoFrontal" unique_id=831414904]
+modulate = Color(0.56, 0.7, 0.61, 1)
+position = Vector2(20, 670)
+scale = Vector2(1.0041418, 1.0041418)
+texture = ExtResource("27")
+centered = false
+
+[node name="samambaia2" type="Sprite2D" parent="DecoracaoFrontal" unique_id=490412744]
+modulate = Color(0.56, 0.7, 0.61, 1)
+position = Vector2(630, 670)
+scale = Vector2(1.0235046, 1.0235046)
+texture = ExtResource("27")
+centered = false
+
+[node name="samambaia3" type="Sprite2D" parent="DecoracaoFrontal" unique_id=1743346938]
+modulate = Color(0.56, 0.7, 0.61, 1)
+position = Vector2(1240, 670)
+scale = Vector2(0.76079303, 0.76079303)
+texture = ExtResource("27")
+centered = false
+
+[node name="samambaia4" type="Sprite2D" parent="DecoracaoFrontal" unique_id=601813646]
+modulate = Color(0.56, 0.7, 0.61, 1)
+position = Vector2(1850, 670)
+scale = Vector2(0.7369643, 0.7369643)
+texture = ExtResource("27")
+centered = false
+
+[node name="samambaia5" type="Sprite2D" parent="DecoracaoFrontal" unique_id=1511530595]
+modulate = Color(0.56, 0.7, 0.61, 1)
+position = Vector2(2460, 670)
+scale = Vector2(0.9242931, 0.9242931)
+texture = ExtResource("27")
+centered = false
+
+[node name="samambaia6" type="Sprite2D" parent="DecoracaoFrontal" unique_id=1059858671]
+modulate = Color(0.56, 0.7, 0.61, 1)
+position = Vector2(3070, 670)
+scale = Vector2(1.0210036, 1.0210036)
+texture = ExtResource("27")
+centered = false
+
+[node name="samambaia7" type="Sprite2D" parent="DecoracaoFrontal" unique_id=1205342870]
+modulate = Color(0.56, 0.7, 0.61, 1)
+position = Vector2(3680, 670)
+scale = Vector2(0.7135983, 0.7135983)
+texture = ExtResource("27")
+centered = false
+
+[node name="Itens" type="Node2D" parent="." unique_id=1056222046]
+z_index = 6
+
+[node name="Flores" type="Node2D" parent="Itens" unique_id=937561412]
+
+[node name="Flor1" type="Sprite2D" parent="Itens/Flores" unique_id=1159160834]
+position = Vector2(1184, 408)
+texture = ExtResource("35")
+
+[node name="Flor2" type="Sprite2D" parent="Itens/Flores" unique_id=1469804273]
+position = Vector2(1610, 186)
+texture = ExtResource("35")
+
+[node name="Flor3" type="Sprite2D" parent="Itens/Flores" unique_id=94206634]
+position = Vector2(2900, 568)
+texture = ExtResource("35")
+
+[node name="Regador" type="Sprite2D" parent="Itens" unique_id=2070323704]
+position = Vector2(3250, 580)
+texture = ExtResource("34")
+
+[node name="SomColeta" type="AudioStreamPlayer" parent="." unique_id=645912225]
+stream = ExtResource("36")
+volume_db = -5.0
+
+[node name="AreaDeSaida" type="Area2D" parent="." unique_id=964050945]
+position = Vector2(3620, 520)
+collision_layer = 0
+collision_mask = 2
+
+[node name="Colisao" type="CollisionShape2D" parent="AreaDeSaida" unique_id=1665862281]
+shape = SubResource("SaidaShape")
+
+[node name="Camera" type="Camera2D" parent="." unique_id=623290737]
+position = Vector2(640, 360)
+limit_left = 0
+limit_top = 0
+limit_right = 3840
+limit_bottom = 720
+position_smoothing_enabled = true
+position_smoothing_speed = 6.0
+
+[node name="Interface" type="CanvasLayer" parent="." unique_id=772699252]
+layer = 30
+
+[node name="Fade" type="ColorRect" parent="Interface" unique_id=1451158261]
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+color = Color(0.12, 0.22, 0.18, 1)
+
+[node name="Conclusao" type="Panel" parent="Interface" unique_id=1997916726]
+visible = false
+offset_left = 330.0
+offset_top = 210.0
+offset_right = 950.0
+offset_bottom = 485.0
+
+[node name="Mensagem" type="Label" parent="Interface/Conclusao" unique_id=982111516]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 28.0
+offset_right = 600.0
+offset_bottom = 115.0
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.97, 0.94, 0.82, 1)
+theme_override_fonts/font = ExtResource("19")
+theme_override_font_sizes/font_size = 25
+text = "O jardim é de todos!
+Vocês chegaram juntos à clareira."
+
+[node name="Recomecar" type="Button" parent="Interface/Conclusao" unique_id=350448529]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 177.0
+offset_right = 460.0
+offset_bottom = 231.0
+theme_override_font_sizes/font_size = 23
+text = "Passear novamente"
+
+[node name="Musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("37")
+volume_db = -5.0
+autoplay = true
+
+[connection signal="finished" from="Musica" to="Musica" method="play"]
+
+[node name="Pausa" parent="." instance=ExtResource("pause_ui")]
+
+[node name="ConversaInicial" parent="." instance=ExtResource("conversa")]
+position = Vector2(520, 608)
